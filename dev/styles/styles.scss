@@ -1,0 +1,82 @@
+$accentColor: #69c8c9;
+$flourishColor: #e7ff89;
+
+
+@import "partials/setup";
+@import "partials/header";
+@import "partials/about";
+@import "partials/skills";
+@import "partials/portfolio";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/mediaqueries";
+
+
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	
+}
+body {
+	margin: 0 auto;
+}
+
+
+h3 {
+	font-size: 36px;
+	position: relative;
+}
+
+.underline:after {
+	position: absolute;
+	display: block;
+	content: '';
+	background-color: $accentColor;
+	width: 100px;
+	height: 2px;
+    bottom: -25px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 0px;
+	padding-left: none;
+}
+li {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #838383;
+}
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.rightContainer {
+	max-width: 90%;
+	float: right;
+}
+
+.leftContainer {
+	max-width: 90%;
+	float: left;
+	display: block;
+}
+
+
+
+
+
+
+

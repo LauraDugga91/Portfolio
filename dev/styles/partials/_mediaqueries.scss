@@ -1,0 +1,183 @@
+@media (max-width: 1280px) { 
+	#portfolio {
+		height: 200vh;
+	}
+}
+
+@media (max-width: 980px) {
+	.navigationv li {
+		font-size: 14px;
+	}
+	#about .aboutContent {
+		margin-top: 0px;
+		p {
+			font-size: 16px;
+		}
+	}
+	#portfolio {
+		height: 180vh;
+	}
+}
+
+@media (max-width: 760px) {
+	.rightContainer {
+		padding-right: 10%;
+	}
+	.header {
+		.logoIcon {
+			display: none;
+		}
+		ul {
+			display: none;
+		}
+		.burger {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 100;
+		}
+		.dropdown-content {
+		    display: none;
+		}
+		.dropdown-content a {
+		    color: white;
+		    padding: 20px;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    font-size: 20px;
+		    font-family: 'Source Sans Pro', sans-serif;
+		    display: inline-block;
+		}
+		.burger1 {
+			display: flex;
+			flex-direction: column;
+			top: 60px;
+			position: absolute;
+		    right: 0;
+		    background-color: rgba(0, 0, 0, 0.7);
+		    z-index: 1;
+		    font-size: 16px;
+		}
+	}
+	.smallHeadshot {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			img {
+			width: 280px;
+		}
+	}
+	#about {
+		flex-direction: column-reverse;
+		.headshot {
+			display: none;	
+		}
+		.aboutContent{
+			width: 100%;
+		}
+	}
+	#skills {
+		.line2 {
+			display: none;
+		}
+		transform: translateY(10px);
+		h3 {
+			padding: 40px;
+		}
+		li {
+			font-size: 40px;
+		}
+		li:hover {
+			font-size: 41px;
+		}
+	}
+	#portfolio {
+		height: 400vh;
+		.portfolioHalf {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.contentSwitch {
+			flex-direction: column-reverse;
+		}
+	}
+	#contact {
+		h3 {
+			font-size: 26px;
+			padding: 5px, 20px;
+		}
+	}
+	.socialIcons {
+		width: 50%;
+	}	
+}
+
+
+@media (max-width: 670px) {
+	.myName {
+		.logo {
+			max-width: 320px;
+		}
+		.tagline {
+			font-size: 25px;
+		}
+	}
+	#portfolio {
+		height: 360vh;
+		.portfolioItem {
+			.portfolioHalf {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	#contact {
+		h3 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 325px) {
+	
+	.myName {
+		.logo {
+			max-width: 200px;
+		.tagline {
+			font-size: 16px;
+		}
+	}
+	}
+
+	// .logo {
+	// 	max-width: 280px;
+	// 	margin: 0 auto;
+	// 	img {
+	// 		height: 100%;
+	// 	}
+
+	// }
+	#about {
+		.headshot {
+			img {
+				width: 200px;
+				padding-right: 0px;
+			}
+		}
+	}
+	#skills {
+		ul {
+			padding-left: 0px;
+			justify-content: space-around;
+		}
+		li {
+			width: 50%;
+		}
+	}
+	.socialIcons li {
+		margin: 0 auto;
+	}
+
+}
+
