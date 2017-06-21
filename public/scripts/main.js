@@ -1,6 +1,9 @@
 "use strict";
 
 $(document).ready(function () {
+
+	//smooth scroll
+
 	$(".burger").on("click tap", function () {
 		$(".dropdown-content").toggleClass("burger1");
 	});
@@ -26,4 +29,21 @@ $(document).ready(function () {
 			scrollTop: $('#contact').offset().top
 		}, 1000);
 	});
+	$('.topClick').on('click', function () {
+		$('html, body').animate({
+			scrollTop: $('#nav').offset().top
+		}, 1000);
+	});
+
+	//nav bar 
+
+	// $(window).scroll( function() {
+	// 		if ($(window).scrollTop() > 150) {
+	// 			$('#nav').fadeIn(400);
+	// 		} else {
+	// 			$('#nav').fadeOut(400);
+	// 		}
+
+	// 	});
+
 });

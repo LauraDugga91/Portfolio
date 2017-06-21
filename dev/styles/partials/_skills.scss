@@ -3,23 +3,12 @@
 #skills {
 	z-index: 100;
 	clear: both;
-	background: repeating-linear-gradient(24deg, #3EC5D5 0%, #3AC4D5 20%);
+	background: repeating-linear-gradient(24deg, #69c8c9 0%, #69c8c4 20%);
 	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
 	transform: translateY(-60px);
 	position: relative;
-	// .line2 {
-	// 	position: absolute;
-	// 	display: block;
-	// 	content: '';
-	// 	background-color: $flourishColor;
-	// 	width: 150px;
-	// 	height: 2px;
-	// 	top: 72px;
-	// 	left: 20%;
-	//     -webkit-transform: rotate(-77deg);
-	// }
 	h3 {
-		color: $flourishColor;
+		color: #fff;
 		text-align: center;
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -46,10 +35,6 @@
 			margin-top: 0px;
 			margin-bottom: 60px;
 		}
-	}
-	li i:hover {
-		color: $flourishColor;
-		font-size: 81px;
 	}
 }
 

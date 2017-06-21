@@ -8,12 +8,12 @@
 		<link rel="stylesheet" href="../public/styles/style.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:300,400" rel="stylesheet">
-		<link type="image/png" href="../assets/iconlogo.png" rel="icon">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro:300,400" rel="stylesheet">
+		<link type="image/png" href="../assets/favicon.png" rel="icon">
 	</head>
 	<body>
-		<div class="header containerRight">
-			<nav class="container">
+		<header class="containerRight">
+			<nav class="container animated slideInRight" id="nav">
 				<div class="logoContainer">
 					<img class="logoIcon" src="assets/iconlogo.png" alt="Logo">
 				</div>
@@ -33,13 +33,10 @@
 				</div>
 			</nav>
 			<div class="myName container">
-				<!-- <h1 class="animated flash">Laura </br>Duggan</h1> -->
-				<img class="logo" src="assets/lauraLogo.png">
+				<img class="logo animated slideInLeft" src="assets/lauraLogo.png">
 				<p class="tagline">Front-end developer</p>
 			</div>
-			<div class="line1">
-			</div>
-		</div>
+		</header>
 		<div class="smallHeadshot">
 			<img src="assets/headshot.jpg" alt="My face">
 		</div>
@@ -105,13 +102,16 @@
 						<p class="tools">React, Firebase, HTML5, CSS3, JavaScript</p>
 						<p>A site for users to log in and store information about their travels.</p>
 						<a class="button" href="https://postcard-76127.firebaseapp.com/" target="_blank">View Live</a>
+						<a class="button" href="https://github.com/LauraDugga91/Postcard" target="_blank">GitHub</a>
 					</div>
-					<div class="portfolioHalf">
+					<div class="portfolioHalf animated slideInRight">
 						<img src="assets/postcardScreen.png" alt="">
 					</div>
 				</div>
+			</div>
+			<div class="containerLeft">
 				<div class="portfolioItem">
-					<div class="portfolioHalf">
+					<div class="portfolioHalf animated slideInLeft">
 						<img src="assets/nailScreen.png" alt="">
 					</div>
 					<div class="portfolioHalf">
@@ -119,28 +119,35 @@
 						<p class="tools">JavaScript, jQuery, APIs, HTML5, CSS3</p>
 						<p>The user inputs the type of date they're going on, and this application outputs what nail polish to wear.</p>
 						<a class="button" href="http://lauraduggan.ca/nailYourDate/" target="_blank">View Live</a>
+						<a class="button" href="https://github.com/LauraDugga91/nailApp" target="_blank">GitHub</a>
 					</div>
 				</div>
+			</div>
+			<div class="rightContainer">
 				<div class="portfolioItem  contentSwitch">
 					<div class="portfolioHalf portfolioText">
 						<h2>The Lit List</h2>
 						<p class="tools">JavaScript, jQuery, Firebase, HTML5, CSS3, APIs</p>
 						<p>Users can add upcoming concerts to a global list, curated worldwide. Created in collaboration with two other students.</p>
 						<a class="button" href="https://yellow-jackets.github.io/Songkick-API-Project/" target="_blank">View Live</a>
+						<a class="button" href="https://github.com/LauraDugga91/Songkick-API-Project" target="_blank">GitHub</a>
 					</div>
-					<div class="portfolioHalf">
+					<div class="portfolioHalf animated slideInRight">
 						<img src="assets/litScreen.png" alt="">
 					</div>
 				</div>
+			</div>
+			<div class="containerLeft">
 				<div class="portfolioItem">
-					<div class="portfolioHalf">
-						<img src="assets/DifinityScreen.png" alt="">
+					<div class="portfolioHalf animated slideInLeft">
+						<img src="assets/definityScreen.png" alt="">
 					</div>
 					<div class="portfolioHalf portfolioText">
 						<h2>Definity</h2>
 						<p class="tools">HTML5, CSS3, Sass</p>
 						<p>A PSD to responsive site conversion</p>
 						<a class="button" href="http://lauraduggan.ca/definity/" target="_blank">View Live</a>
+						<a class="button" href="https://github.com/LauraDugga91/definity" target="_blank">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -148,14 +155,14 @@
 		<section class="email">
 			<div>
 				<h3>Say Hello</h3>
-				<a href="mailto:info@lauraduggan.ca">info@lauraduggan.ca</a>
+				<a href="mailto:info@lauraduggan.ca">info [at] lauraduggan.ca</a>
 			</div>
 		</section>
 		<div class="contactBackground">
 		<section id="contact" class="clearfix container">
 			<h3>Lets Make something together</h3>
 			<div class="contactForm">		
-				<form method="POST" action="http://www.focuspocus.io/magic/lauracatherineduggan@gmail.com">
+				<form method="POST" action="https://formspree.io/lauracatherineduggan@gmail.com">
 					<p>Your Name</p>
 					<input type="text" class="name" name="name">
 					<p>Your Email</p>
@@ -176,8 +183,11 @@
 					<li><a href="https://medium.com/@lauracatherineduggan" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
+			<div class="bottomLogo topClick">
+				<a><img class="logoIcon" src="assets/iconlogo.png" alt="Logo"></a>
+			</div>
 			<div class="copyright">
-				<p>&copy; Laura Duggan 2017</p>
+				<p>&copy; Laura Duggan 2017 | Headshot by Pam Lau</p>
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

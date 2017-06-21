@@ -17,6 +17,19 @@
 	}
 }
 
+.containerLeft {
+	.portfolioHalf {
+			margin-left: 40px;
+
+	}
+}
+
+.rightContainer {
+	.portfolioHalf {
+			margin-right: 40px;
+	}
+}
+
 .portfolioItem {
 	display: flex;
 	flex-direction: row;
@@ -24,35 +37,38 @@
 	justify-content: space-between;
 	margin-top: 40px;
 	.portfolioHalf {
-		margin: 5px, 15px;
 		width: 45%;
-		margin-right: 30px;
 		img {
 			width: 100%;
+
 		}
 	}
 	p {
 		font-size: 18px;
 		padding-right: 20px;
 		margin-bottom: 50px;
+		
 	}
-
 }
 
 
 .button {
 	border: none;
-	box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
+	box-shadow: 0px 10px 10px 0px rgba(72, 196, 212, 0.3);
 	background-color: $accentColor;
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
-	border-radius: 30px;
 	padding: 15px 40px;
+	margin-right: 20px;
 	
 }
 .button:hover {
 	color: $flourishColor;
+	position: relative; 
+    top: -2px;
+    left: -2px;
+
 }
 
 #portfolio:after{

@@ -2,28 +2,40 @@
 //footer 
 
 footer {
-	background-color: #70727a;
+	background-color: $accentColor;
 	height: 250px;
 	p {
 		margin-top: 30px;
 		text-align: center;
-		color: $accentColor;
+		color: #70727a;
 	}
 	.socialIcons {
-		width: 80%;
-		margin: 0 auto;
-		padding-top: 120px;
-		text-align: center;
+		// margin: 0 auto;
+		padding-top: 80px;
+		// text-align: center;
 	}
 
 	.socialIcons ul {
-		padding: 0px;
-		// margin-bottom: 25px;
+		width: 40%;
+		margin: 0 auto;
+		padding-left: 0px;
+		padding-bottom: 20px;		// margin-bottom: 25px;
 		display: flex;
 		flex-direction: row;
 		text-align: center;
-	
 
+
+	}
+	.bottomLogo {
+		margin: 0 auto;
+		text-align: center;
+
+	}
+	.logoIcon {
+		height: 50px;
+		// margin-top: 25px;
+		margin: 0px auto;
+		text-align: center;
 
 	}
 
@@ -37,6 +49,6 @@ footer {
 	}
 
 	.socialIcons li:hover{
-		color: $accentColor;
+		color: #70727a;
 	}
 }

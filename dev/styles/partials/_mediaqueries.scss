@@ -16,6 +16,13 @@
 	}
 	#portfolio {
 		height: 180vh;
+		.portfolioHalf {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+		.contentSwitch {
+			flex-direction: column-reverse;
+		}
 	}
 }
 
@@ -23,11 +30,12 @@
 	.rightContainer {
 		padding-right: 10%;
 	}
-	.header {
+
+	header {
 		.logoIcon {
 			display: none;
 		}
-		ul {
+		.navigation {
 			display: none;
 		}
 		.burger {
@@ -88,15 +96,12 @@
 		li {
 			font-size: 40px;
 		}
-		li:hover {
-			font-size: 41px;
-		}
 	}
 	#portfolio {
 		height: 400vh;
 		.portfolioHalf {
 			width: 100%;
-			margin-bottom: 30px;
+			margin-bottom: 40px;
 		}
 		.contentSwitch {
 			flex-direction: column-reverse;
@@ -108,8 +113,10 @@
 			padding: 5px, 20px;
 		}
 	}
-	.socialIcons {
-		width: 50%;
+	footer {
+	.socialIcons ul{
+		width: 70%;
+	}
 	}	
 }
 
@@ -149,15 +156,6 @@
 		}
 	}
 	}
-
-	// .logo {
-	// 	max-width: 280px;
-	// 	margin: 0 auto;
-	// 	img {
-	// 		height: 100%;
-	// 	}
-
-	// }
 	#about {
 		.headshot {
 			img {

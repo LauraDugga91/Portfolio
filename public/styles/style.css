@@ -131,7 +131,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.header {
+header {
   background: linear-gradient(-77deg, rgba(112, 114, 122, 0.5) 35%, rgba(0, 0, 0, 0.7) 35%), url(../../assets/hero.jpg);
   background-position: center;
   background-size: cover;
@@ -140,9 +140,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
   position: relative;
   z-index: 100; }
-  .header .logoIcon {
+  header .logoIcon {
     height: 50px;
-    margin-top: 40px; }
+    margin-top: 25px; }
 
 .myName {
   margin: 0 auto;
@@ -201,11 +201,14 @@ nav {
   .navigation li {
     width: 20%;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
     color: #e2fcff;
     text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.2em; }
+  .navigation a {
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all; }
   .navigation a:hover {
     border-bottom: 2px solid #69c8c9;
     color: white; }
@@ -229,7 +232,8 @@ nav {
     width: 50%;
     margin-top: 15%; }
     #about .aboutContent p {
-      margin-top: 55px; }
+      margin-top: 55px;
+      padding-right: 10px; }
   #about .headshot {
     width: 50%; }
     #about .headshot img {
@@ -243,14 +247,14 @@ nav {
 #skills {
   z-index: 100;
   clear: both;
-  background: repeating-linear-gradient(24deg, #3EC5D5 0%, #3AC4D5 20%);
+  background: repeating-linear-gradient(24deg, #69c8c9 0%, #69c8c4 20%);
   -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
   position: relative; }
   #skills h3 {
-    color: #e7ff89;
+    color: #fff;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -281,9 +285,6 @@ nav {
       color: #fff;
       margin-top: 0px;
       margin-bottom: 60px; }
-  #skills li i:hover {
-    color: #e7ff89;
-    font-size: 81px; }
 
 #portfolio {
   background-color: #eeeff1;
@@ -298,6 +299,12 @@ nav {
     border-top: 1px solid #69c8c9;
     border-bottom: 1px solid #69c8c9;
     margin-bottom: 20px; }
+
+.containerLeft .portfolioHalf {
+  margin-left: 40px; }
+
+.rightContainer .portfolioHalf {
+  margin-right: 40px; }
 
 .portfolioItem {
   display: -webkit-box;
@@ -314,9 +321,7 @@ nav {
           justify-content: space-between;
   margin-top: 40px; }
   .portfolioItem .portfolioHalf {
-    margin: 5px, 15px;
-    width: 45%;
-    margin-right: 30px; }
+    width: 45%; }
     .portfolioItem .portfolioHalf img {
       width: 100%; }
   .portfolioItem p {
@@ -326,17 +331,20 @@ nav {
 
 .button {
   border: none;
-  -webkit-box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
-          box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(72, 196, 212, 0.3);
+          box-shadow: 0px 10px 10px 0px rgba(72, 196, 212, 0.3);
   background-color: #69c8c9;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
-  border-radius: 30px;
-  padding: 15px 40px; }
+  padding: 15px 40px;
+  margin-right: 20px; }
 
 .button:hover {
-  color: #e7ff89; }
+  color: grey;
+  position: relative;
+  top: -2px;
+  left: -2px; }
 
 #portfolio:after {
   content: '';
@@ -360,7 +368,7 @@ nav {
   background-size: cover;
   clear: both; }
   .email div {
-    color: #e5fd87;
+    color: #69c8c9;
     font-weight: 400;
     margin: 0 auto;
     font-size: 20px;
@@ -415,39 +423,41 @@ nav {
       padding: 8px; }
     #contact form #button {
       border: none;
-      -webkit-box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
-              box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
+      -webkit-box-shadow: 0px 10px 10px 0px rgba(72, 196, 212, 0.3);
+              box-shadow: 0px 10px 10px 0px rgba(72, 196, 212, 0.3);
       background-color: #69c8c9;
       color: white;
       font-family: 'Source Sans Pro', sans-serif;
       text-transform: uppercase;
-      border-radius: 30px;
       padding: 15px 40px;
       width: 160px;
       display: block;
       text-align: center;
       margin: 20px auto; }
     #contact form #button:hover {
-      color: #e7ff89; }
+      color: grey;
+      position: relative;
+      top: -2px;
+      left: -2px; }
 
 .contactBackground {
   background: #eeeff1;
   height: 500px; }
 
 footer {
-  background-color: #70727a;
+  background-color: #69c8c9;
   height: 250px; }
   footer p {
     margin-top: 30px;
     text-align: center;
-    color: #69c8c9; }
+    color: #70727a; }
   footer .socialIcons {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 120px;
-    text-align: center; }
+    padding-top: 80px; }
   footer .socialIcons ul {
-    padding: 0px;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -455,6 +465,13 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    text-align: center; }
+  footer .bottomLogo {
+    margin: 0 auto;
+    text-align: center; }
+  footer .logoIcon {
+    height: 50px;
+    margin: 0px auto;
     text-align: center; }
   footer .socialIcons li {
     list-style-type: none;
@@ -464,7 +481,7 @@ footer {
     color: #fff;
     margin: 0 auto; }
   footer .socialIcons li:hover {
-    color: #69c8c9; }
+    color: #70727a; }
 
 @media (max-width: 1280px) {
   #portfolio {
@@ -478,24 +495,32 @@ footer {
     #about .aboutContent p {
       font-size: 16px; }
   #portfolio {
-    height: 180vh; } }
+    height: 180vh; }
+    #portfolio .portfolioHalf {
+      width: 100%;
+      margin-bottom: 40px; }
+    #portfolio .contentSwitch {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
 
 @media (max-width: 760px) {
   .rightContainer {
     padding-right: 10%; }
-  .header .logoIcon {
+  header .logoIcon {
     display: none; }
-  .header ul {
+  header .navigation {
     display: none; }
-  .header .burger {
+  header .burger {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 100; }
-  .header .dropdown-content {
+  header .dropdown-content {
     display: none; }
-  .header .dropdown-content a {
+  header .dropdown-content a {
     color: white;
     padding: 20px;
     text-decoration: none;
@@ -503,7 +528,7 @@ footer {
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     display: inline-block; }
-  .header .burger1 {
+  header .burger1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -541,13 +566,11 @@ footer {
       padding: 40px; }
     #skills li {
       font-size: 40px; }
-    #skills li:hover {
-      font-size: 41px; }
   #portfolio {
     height: 400vh; }
     #portfolio .portfolioHalf {
       width: 100%;
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
     #portfolio .contentSwitch {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -556,8 +579,8 @@ footer {
   #contact h3 {
     font-size: 26px;
     padding: 5px, 20px; }
-  .socialIcons {
-    width: 50%; } }
+  footer .socialIcons ul {
+    width: 70%; } }
 
 @media (max-width: 670px) {
   .myName .logo {
@@ -634,6 +657,10 @@ p {
 .rightContainer {
   max-width: 90%;
   float: right; }
+
+.containerLeft {
+  max-width: 90%;
+  float: left; }
 
 .leftContainer {
   max-width: 90%;

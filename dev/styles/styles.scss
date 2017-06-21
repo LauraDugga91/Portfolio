@@ -1,5 +1,5 @@
 $accentColor: #69c8c9;
-$flourishColor: #e7ff89;
+$flourishColor: grey;
 
 
 @import "partials/setup";
@@ -25,6 +25,7 @@ body {
 h3 {
 	font-size: 36px;
 	position: relative;
+	
 }
 
 .underline:after {
@@ -66,6 +67,11 @@ p {
 .rightContainer {
 	max-width: 90%;
 	float: right;
+}
+
+.containerLeft {
+	max-width: 90%;
+	float: left;
 }
 
 .leftContainer {
